@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+ 
+  h1, h2, h3 {
+    text-decoration: underline;
+  }
+ 
+  a {
+    text-decoration: none;
+    color: #edfffd;
+  }
+ 
+  a:hover {
+    text-decoration: underline;
+  }
+ 
+  p {
+    margin-bottom: 1.5em;
+  }
+ 
+  /* Section decorations */
+  section {
+    padding: 40px;
+    background-color: #024940;
+    margin-bottom: 30px;
+  }
+ 
+  section h2 {
+    color: #e5e9f3;
+  }
+ 
+  section p {
+    color: #94e9e5;
+  }
+ 
+  /* Margins and paddings */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .banner-area {
+    padding: 20px;
+    background-color: #034f52;
+    color: #1bc27c;
+  }
+ 
+  /* Hover effects */
+  nav a:hover {
+    color: #3bac7d;
+    background-color: #8ae1f7;
+  }
+ 
+  nav ul li a:hover {
+    color: #baf1df;
+    background-color: #74e4966c;
+  }
+ 
+  /* Font styles and decorations */
+  h1, h2, h3 {
+    font-family: "Times New Roman", serif;
+  }
+ 
+  h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+ 
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+ 
+  h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+ 
+  /* Listed decorations */
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+ 
+  /* Image decorations */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+
+  header {
+    background-color: #28234d;
+    padding: 20px;
+  }
+ 
+  .logo img {
+    max-width: 150px;
+  }
+ 
+  nav a {
+    margin-right: 20px;
+    color: #f0f7f1;
+    font-weight: bold;
+  }
+ 
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+ 
+  nav ul li {
+    display: inline;
+  }
+ 
+
+  footer {
+    background-color: #333;
+    padding: 20px;
+    color: #0cdfaa;
+    text-align: center;
+  }
+ 
+
+  @media (max-width: 767px) {
+    .header1 {
+      text-align: center;
+    }
+   
+    .header1 nav {
+      margin-top: 20px;
+    }
+   
+    .header1 ul {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+   
+    .header1 ul li {
+      margin: 0 10px;
+    }
+  }
+ 
+  @media (max-width: 450px) {
+    .header1 {
+      font-size: 24px;
+    }
+  }
+ 
+  iframe {
+    max-width: 100%;
+    height: 400px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+  }
