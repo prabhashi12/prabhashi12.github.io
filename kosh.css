@@ -1,6 +1,6 @@
 /* styles.css */
 
-/* Global Styles */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -75,7 +75,7 @@ nav a:hover{
     text-align: center;
   }
   
-  /* Hover Effects */
+
   
   nav a:hover {
     background-color: #2980b9;
@@ -92,7 +92,7 @@ nav a:hover{
     transition: opacity 0.5s ease;
   }
   
-  /* Animations */
+
   
   @keyframes fadeIn {
     0% {
@@ -107,7 +107,7 @@ nav a:hover{
     animation: fadeIn 0.8s ease;
   }
   
-  /* Media Queries */
+
   
   @media (max-width: 768px) {
     .header {
