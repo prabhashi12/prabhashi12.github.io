@@ -310,7 +310,7 @@ nav a:hover{
 }
 
 
-/* General styles hikka*/
+/* hikkaduwa*/
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -318,7 +318,7 @@ body {
 }
 
 
-/* Banner area styles */
+
 .banner-area {
   text-align: center;
 }
@@ -330,7 +330,7 @@ body {
   text-decoration: underline;
 }
 
-/* Content area styles */
+
 .content.areahikkas {
   padding: 20px;
 }
@@ -355,7 +355,7 @@ body {
   height: auto;
 }
 
-/* Animation */
+
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -367,12 +367,12 @@ body {
   }
 }
 
-/* Apply animation to specific elements */
+
 .content.areahikka {
   animation: slideIn 1s ease-in-out;
 }
 
-/* Google Maps iframe */
+
 iframe {
   width: 100%;
   height: 400px;
