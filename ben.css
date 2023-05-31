@@ -21,7 +21,7 @@ body {
     margin-bottom: 1.5em;
   }
  
-  /* Section decorations */
+
   section {
     padding: 40px;
     background-color: #024940;
@@ -36,7 +36,7 @@ body {
     color: #94e9e5;
   }
  
-  /* Margins and paddings */
+
   body {
     margin: 0;
     padding: 0;
@@ -48,7 +48,7 @@ body {
     color: #1bc27c;
   }
  
-  /* Hover effects */
+
   nav a:hover {
     color: #3bac7d;
     background-color: #8ae1f7;
@@ -59,7 +59,7 @@ body {
     background-color: #74e4966c;
   }
  
-  /* Font styles and decorations */
+
   h1, h2, h3 {
     font-family: "Times New Roman", serif;
   }
@@ -79,13 +79,13 @@ body {
     margin-bottom: 15px;
   }
  
-  /* Listed decorations */
+  
   ul {
     list-style: disc;
     padding-left: 20px;
   }
  
-  /* Image decorations */
+ 
   img {
     max-width: 100%;
     height: auto;
