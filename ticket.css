@@ -1,0 +1,218 @@
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('beach.jpg');
+  }
+  
+ 
+  .heading {
+    background-color: #5eeec3;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .heading a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .section {
+    margin-bottom: 20px;
+  }
+  
+
+  .subheading {
+    margin-bottom: 10px;
+  }
+  
+
+  .calendar {
+    background-image: url('ppp.jfif');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border: 2px solid #007bff;
+  }
+  
+
+  .tickets {
+    background-image: url('ppp.jfif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    border: 2px solid #007bff;
+    font-family:'Courier New', Courier, monospace;
+     
+  }
+  
+  .ticket {
+    flex-basis: calc(50% - 10px);
+    padding: 10px;
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 10px 0;
+      border:#333;
+      border-width: 15px;
+     
+  }
+  
+
+  .ticket button {
+    background-color: #4CAF50;
+      color: white;
+      border:#333;
+      border-width: 15px;
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight:900px;
+      border: 2px solid #000913;
+  }
+  
+
+  .ticket input {
+    height: 35px;
+    width: 60px;
+    text-align: center;
+      border: 2px solid #1a8011;
+      font-size: medium;
+      color: black;
+      
+  }
+  .custom-font {
+    font-weight: 100;
+    font-family: "Arial", sans-serif;
+  }
+
+  .duration table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+    height: auto;
+    text-align: justify;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    color: #000307;
+    box-shadow: 2px 2px 5px #080101;
+    border: 2px solid #000913;
+    background-image: url('ppp.jfif');
+  }
+  
+  .duration th, .duration td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border: 2px solid #000913;
+  }
+  
+  .duration th {
+    background-color: #f0f0f0;
+  }
+
+  
+
+  .purchase-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    background-image: url('ppp.jfif');
+   
+  }
+  
+  .purchase-summary th, .purchase-summary td {
+    padding: 10px;
+    border: 1px solid #813131;
+  }
+  
+  .purchase-summary th {
+    background-color: #aee5e7;
+  }
+  
+
+  .purchase-button {
+    text-align: center;
+  }
+  
+  .purchase-button button {
+    background-color: #130101;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .purchase-button button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+
+  select {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #d5f7eb;
+    border: 2px solid #000307;
+  }
+  
+  input[type="date"] {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 100px solid #ccc;
+    border-radius: 4px;
+    background-color: #b0a5ee;
+    border: 2px solid #000307;
+  }
+  .tf{
+    font-weight: bold;
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+
+    .subheading {
+      font-size: 20px;
+    }
+
+    .tickets {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .ticket {
+      flex: 0 0 48%;
+      margin-bottom: 10px;
+    }
+
+    .tf table {
+      font-size: 12px;
+    }
+    .purchase-summary table {
+      font-size: 12px;
+    }
+  }
