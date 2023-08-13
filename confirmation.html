@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking Confirmation</title>
+    <style>
+        body {
+            background-image:  url('p.jfif');
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image:  url('1.jpg');
+            border: 2px solid #00050a;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+#summaryDate, #summaryTimeSlot {
+  font-weight: bold;
+}
+
+#totalPayable {
+  font-weight: bold;
+}
+
+#name, #email, #phone, #gender {
+  font-style: italic;
+}
+
+td[id^="summary"], td[id^="price"] {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+        h1 {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        p {
+            color: #2e2c2c;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-message {
+            color: #36b37e;
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        .ticket-details {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #d2f5e7;
+            text-align: left;
+            margin-bottom: 30px;
+            font-weight: 200px;
+        }
+
+        .ticket-details p {
+            margin: 8px;
+        }
+        .ticket-details:hover {
+            background-color: #42e9b1;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #36b37e;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #29e433;
+        }
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .thank-you-message {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+
+            .container {
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .ticket-details p {
+                font-size: 12px;
+            }
+
+            .button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Booking Confirmation</h1>
+        <div class="thank-you-message">
+            Thank you for purchasing your ticket!
+        </div>
+        <p>Thank you for your order. Your order has been confirmed with us. You can show this
+confirmation at the entrance. Following is the summary of your order</p>
+        <div class="ticket-details">
+            <div class="section">
+                <div class="purchase-summary">
+                    <table>
+                        <tr>
+                            <td id="summaryDate">-</td>
+                            <td id="summaryTimeSlot">-</td>
+                        </tr>      
+                        <tr>
+                            <th>Category</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                         <tr>
+                            <td>Customers Email</td>
+                            <td></td>
+                            <td id="Cuemail"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone number</td>
+                            <td></td>
+                            <td id="CUphone"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td></td>
+                            <td id="CUgender"></td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td></td>
+                            <td id="CUName"></td>
+                        </tr>
+                        <tr>
+                            <td>Foreigner Adult</td>
+                            <td id="summaryForeignerAdult">0</td>
+                            <td id="priceForeignerAdult">$0</td>
+                        </tr>
+                        <tr>
+                            <td>Foreigner Child</td>
+                            <td id="summaryForeignerChild">0</td>
+                            <td id="priceForeignerChild">$0</td>
+                        </tr>
+                        <tr>
+                            <td>SL Adult</td>
+                            <td id="summarySLAdult">0</td>
+                            <td id="priceSLAdult">$0</td>
+                        </tr>
+                        <tr>
+                            <td>SL Child</td>
+                            <td id="summarySLChild">0</td>
+                            <td id="priceSLChild">$0</td>
+                        </tr>
+                        <tr>
+                            <td>Infant</td>
+                            <td id="summaryInfant">0</td>
+                            <td>$0</td>
+                        </tr>
+                        <tr>
+                            <td>Total Payable</td>
+                            <td></td>
+                            <td id="totalPayable">$0</td>
+                        </tr>
+                                  
+                    </table>
+                </div>
+        </div>
+        <p>We have sent a confirmation email to your registered email address. Please keep it for your records.</p>
+        <p> Please don't hesitate to get in touch with us if you have any questions or need more help.</p>
+        <a class="button" href="#">Back to Home</a>
+    </div>
+    <script>
+        		loadDataFromLocalStorage();
+
+function loadDataFromLocalStorage() {
+  const ticketData = JSON.parse(localStorage.getItem('ticketData'));
+
+  document.getElementById('summaryForeignerAdult').innerText = ticketData.tickets.foreignerAdult;
+  document.getElementById('summaryForeignerChild').innerText = ticketData.tickets.foreignerChild;
+  document.getElementById('summarySLAdult').innerText = ticketData.tickets.slAdult;
+  document.getElementById('summarySLChild').innerText = ticketData.tickets.slChild;
+  document.getElementById('totalPayable').innerText = '$' + ticketData.totalPayable;
+
+  document.getElementById('priceForeignerAdult').innerText = '$' + parseFloat(document.getElementById('summaryForeignerAdult').innerText) * 10;
+  document.getElementById('priceForeignerChild').innerText = '$' + parseFloat(document.getElementById('summaryForeignerChild').innerText) * 5;
+  document.getElementById('priceSLAdult').innerText = '$' + parseFloat(document.getElementById('summarySLAdult').innerText) * 4;
+  document.getElementById('priceSLChild').innerText = '$' + parseFloat(document.getElementById('summarySLChild').innerText) * 2;
+}
+// Retrieve the saved data from local storage
+const savedName = localStorage.getItem('name');
+const savedEmail = localStorage.getItem('email');
+const savedPhone = localStorage.getItem('phone');
+const savedGender = localStorage.getItem('gender');
+
+// Populate the table cells with the saved data
+document.getElementById('Cuemail').textContent = savedEmail;
+document.getElementById('CUphone').textContent = savedPhone;
+document.getElementById('CUgender').textContent = savedGender;
+document.getElementById('CUName').textContent = savedName;
+    </script>
+</body>
+</html>
