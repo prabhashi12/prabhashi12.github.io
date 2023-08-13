@@ -8,7 +8,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
   body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    background-image: url('/Users/vishwapabasara/Downloads/beach2.jpg');
+    background-image: url('beach2.jpg');
     
   }
   
@@ -46,7 +46,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
   
   /* Calendar */
   .calendar {
-    background-image: url('/Users/vishwapabasara/Downloads/table.jpg');
+    background-image: url('table.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
@@ -56,7 +56,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
   
   /* Tickets section */
   .tickets {
-    background-image: url('/Users/vishwapabasara/Downloads/table.jpg');
+    background-image: url('table.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -119,7 +119,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     color: #000307;
     box-shadow: 2px 2px 5px #080101;
     border: 2px solid #000913;
-    background-image: url('/Users/vishwapabasara/Downloads/table.jpg');
+    background-image: url('table.jpg');
   }
   
   .duration th, .duration td {
@@ -138,7 +138,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
   .purchase-summary table {
     width: 100%;
     border-collapse: collapse;
-    background-image: url('/Users/vishwapabasara/Downloads/table.jpg');
+    background-image: url('table.jpg');
    
   }
   
