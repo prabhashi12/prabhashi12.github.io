@@ -4,14 +4,15 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     padding: 0;
   }
   
-
+  
   body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    background-image: url('beach.jpg');
+    background-image: url('/Users/vishwapabasara/Downloads/beach2.jpg');
+    
   }
   
- 
+  /* Heading section */
   .heading {
     background-color: #5eeec3;
     color: #fff;
@@ -24,7 +25,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     text-decoration: none;
   }
   
-
+  /* Main container */
   .container {
     max-width: 900px;
     margin: 20px auto;
@@ -33,28 +34,29 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-
+  /* Sections */
   .section {
     margin-bottom: 20px;
   }
   
-
+  /* Subheading */
   .subheading {
     margin-bottom: 10px;
   }
   
-
+  /* Calendar */
   .calendar {
-    background-image: url('ppp.jfif');
+    background-image: url('/Users/vishwapabasara/Downloads/table.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
     border: 2px solid #007bff;
+    
   }
   
-
+  /* Tickets section */
   .tickets {
-    background-image: url('ppp.jfif');
+    background-image: url('/Users/vishwapabasara/Downloads/table.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -62,6 +64,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     display: flex;
     border: 2px solid #007bff;
     font-family:'Courier New', Courier, monospace;
+    width: 100%;
      
   }
   
@@ -77,7 +80,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
      
   }
   
-
+  /* Ticket buttons */
   .ticket button {
     background-color: #4CAF50;
       color: white;
@@ -90,7 +93,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
       border: 2px solid #000913;
   }
   
-
+  /* Ticket input */
   .ticket input {
     height: 35px;
     width: 60px;
@@ -104,7 +107,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     font-weight: 100;
     font-family: "Arial", sans-serif;
   }
-
+  /* Duration table */
   .duration table {
     width: 100%;
     border-collapse: collapse;
@@ -116,7 +119,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     color: #000307;
     box-shadow: 2px 2px 5px #080101;
     border: 2px solid #000913;
-    background-image: url('ppp.jfif');
+    background-image: url('/Users/vishwapabasara/Downloads/table.jpg');
   }
   
   .duration th, .duration td {
@@ -131,11 +134,11 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
   }
 
   
-
+  /* Purchase summary table */
   .purchase-summary table {
     width: 100%;
     border-collapse: collapse;
-    background-image: url('ppp.jfif');
+    background-image: url('/Users/vishwapabasara/Downloads/table.jpg');
    
   }
   
@@ -148,7 +151,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     background-color: #aee5e7;
   }
   
-
+  /* Purchase button */
   .purchase-button {
     text-align: center;
   }
@@ -166,7 +169,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     cursor: not-allowed;
   }
   
-
+  /* Dropdown list */
   select {
     font-family: Arial, sans-serif;
     font-size: 16px;
@@ -177,6 +180,7 @@ html, body, h1, h2, h3, h4, h5, h6, p, ul, li, form, button {
     border: 2px solid #000307;
   }
   
+  /* Custom styles for date picker input */
   input[type="date"] {
     font-family: Arial, sans-serif;
     font-size: 16px;
