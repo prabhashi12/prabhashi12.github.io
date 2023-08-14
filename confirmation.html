@@ -8,9 +8,10 @@
         body {
             background-image:  url('p.jfif');
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-image: url('/Users/vishwapabasara/Downloads/beach2.jpg');
         }
 
         .container {
@@ -123,9 +124,11 @@ tr:hover {
                 margin-bottom: 10px;
             }
 
-            .thank-you-message {
+            .thank {
                 font-size: 20px;
                 margin-bottom: 25px;
+                font-weight: bolder;
+                
             }
 
             .container {
@@ -141,16 +144,17 @@ tr:hover {
                 font-size: 14px;
             }
         }
+
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Booking Confirmation</h1>
-        <div class="thank-you-message">
-            Thank you for purchasing your ticket!
+        <div class="thank">
+        <b>Thank you for purchasing your ticket!</b>
         </div>
-        <p>Thank you for your order. Your order has been confirmed with us. You can show this
-confirmation at the entrance. Following is the summary of your order</p>
+        <p><b>Thank you for your order. Your order has been confirmed with us. You can show this
+confirmation at the entrance. Following is the summary of your order</b></p>
         <div class="ticket-details">
             <div class="section">
                 <div class="purchase-summary">
@@ -164,6 +168,11 @@ confirmation at the entrance. Following is the summary of your order</p>
                             <th>Quantity</th>
                             <th>Price</th>
                         </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td></td>
+                            <td id="CUName"></td>
+                        </tr>
                          <tr>
                             <td>Customers Email</td>
                             <td></td>
@@ -174,16 +183,8 @@ confirmation at the entrance. Following is the summary of your order</p>
                             <td></td>
                             <td id="CUphone"></td>
                         </tr>
-                        <tr>
-                            <td>Gender</td>
-                            <td></td>
-                            <td id="CUgender"></td>
-                        </tr>
-                        <tr>
-                            <td>Name</td>
-                            <td></td>
-                            <td id="CUName"></td>
-                        </tr>
+                        
+                        
                         <tr>
                             <td>Foreigner Adult</td>
                             <td id="summaryForeignerAdult">0</td>
@@ -239,17 +240,17 @@ function loadDataFromLocalStorage() {
   document.getElementById('priceSLAdult').innerText = '$' + parseFloat(document.getElementById('summarySLAdult').innerText) * 4;
   document.getElementById('priceSLChild').innerText = '$' + parseFloat(document.getElementById('summarySLChild').innerText) * 2;
 }
-// Retrieve the saved data from local storage
-const savedName = localStorage.getItem('name');
-const savedEmail = localStorage.getItem('email');
-const savedPhone = localStorage.getItem('phone');
-const savedGender = localStorage.getItem('gender');
 
-// Populate the table cells with the saved data
-document.getElementById('Cuemail').textContent = savedEmail;
-document.getElementById('CUphone').textContent = savedPhone;
-document.getElementById('CUgender').textContent = savedGender;
-document.getElementById('CUName').textContent = savedName;
+const savedDate = localStorage.getItem('date');
+document.getElementById('summaryDate').textContent = savedDate;
+const savedTimeSlot = localStorage.getItem('timeSlot');
+document.getElementById('summaryTimeSlot').textContent = savedTimeSlot;
+const savedname = localStorage.getItem('name');
+document.getElementById('CUName').textContent = savedname;
+const savedemail = localStorage.getItem('confirmEmail');
+document.getElementById('Cuemail').textContent = savedemail;
+const savedphone = localStorage.getItem('phone');
+document.getElementById('CUphone').textContent = savedphone;
     </script>
 </body>
 </html>
