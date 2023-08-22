@@ -44,7 +44,7 @@ nav a:hover{
 }
 
 .footer {
-  background-color: #16e7dd;
+  background-color: #370f09;
   padding: 20px;
   text-align: center;
   font-size: 14px;
@@ -56,8 +56,8 @@ nav a:hover{
 }
 
 .footer-distributed{
-  background: #36f0f7;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  background: #000000;
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -107,8 +107,8 @@ nav a:hover{
 }
 
 .footer-distributed .footer-center i{
-  background-color:  #3eeed6;
-  color: #ffffff;
+  background-color:  #96ee3e;
+  color: #ed1f1f;
   font-size: 25px;
   width: 38px;
   height: 38px;
@@ -220,93 +220,413 @@ nav a:hover{
   margin: 3px 1px;
   text-align: center;
 }
-
-.banner-area {
-    background-image: url(turtle10.jpg);
-    background-color: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-}
-.banner-area:after{
-    content: '';
-    position:relative;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
+/*dont */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
   
 }
-.banner-area h2{
-    padding-top: 8%;
-    font-size: 4REM;
-    color: #f8eeee;
-    position: relative;
-    top: 400px;
-    left: 50px;
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/Users/vishwapabasara/Downloads/turtle10.jpg'); /* Replace with the actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.content-area{
-    width: 100%;
-    height: 500px;
-    position: relative;
-    background: #b0b5ba;
-    top: 900px;
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
-.content-area p{
-    text-align: left;
-    width: 50%;
-    margin: 20px;
-    position: relative;
-    top: 80px;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 300;
-    padding-bottom: 70px;
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
 }
-.content-area img{
-    width: 40%;
-    position: relative;
-    top: -400px;
-    left: 55%;
-    margin: 20px;
+
+.slider img {
+  width: 100px;
+  object-fit: cover;
+}
+.slideshow-container {
+  position: relative;
+  
+  margin: auto;
+}
+
+
+
+.content-area {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color:#f8fbfa;
+  
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border: 3px solid rgb(7, 0, 0);
+ 
+  
+}
+
+.ca{
+  width: 400px;
+  
+}
+.content-area img {
+  max-width: 320px;
+  height: auto;
+  margin: 20px ;
+  position: relative;
+  left: 460px;
+  bottom: 340px;
+   
 }
 
 .content-area1 {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color:#f4f6f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border: 3px solid rgb(7, 0, 0);
+}
+
+.content-area2 {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color:#f6f9f8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border: 3px solid rgb(7, 0, 0);
+}
+/*category*/
+
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #f8f8f8;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+}
+.b-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#b-text {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+b {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/Users/vishwapabasara/Downloads/turtle10.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.banner-area7 {
+  background-color: #e4e4e4;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner-area7 h2 {
+  color: rgb(221, 221, 230);
+  font-size: 32px;
+  text-decoration: underline;
+}
+.banner-area7 p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:bold;
+  font-size:medium;
+}
+
+.sectionB {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color:#f6f8f7;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border: #000;
+  border-width: 20px;
+}
+.sectionB img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding-top: 10px;
+}
+ol {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-left: 40px;
+}
+
+ol li,
+ul li {
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+h3 {
+  color: #333;
+  font-size: 20px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  margin: 20px auto;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+ td {
+  border: 3px solid #080000;
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #ebf5f7f3;
+}
+
+th {
+  border: 3px solid #080000;
+  padding: 15px;
+  text-align: center;
+  background-color: #06f8bc;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #88e7f3;
+}
+
+.text-highlight {
+  text-decoration: underline;
+}
+
+.text-fade {
+  animation: fade 5s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logo {
     width: 100%;
-    height: 1450px;
+    float: none;
+    text-align: center;
+    line-height: 70px;
+  }
+
+  .logo img {
+    width: 50%;
+    margin: 20px;
+  }
+
+  nav {
+    position: relative;
+    line-height: 70px;
+  }
+
+  nav a {
+    text-decoration: none;
+    font-family: "Poppins";
+    letter-spacing: 4px;
+    font-size: 16px;
+    color: rgb(22, 22, 22);
+    padding: 20px 10px;
+    margin: 0 1px;
+    font-weight: 500;
+  }
+
+  .banner-area h2 {
+    padding-top: 8%;
+    font-size: 2rem;
+    color: #f8eeee;
+    position: relative;
+    top: 200px;
+    left: 10px;
+  }
+
+  .content-area {
+    width: 100%;
+    height: auto;
     position: relative;
     background: #b0b5ba;
-    top: 1000px;
-}
-.content-area1 ul li{
-    text-align: left;
-    width: 50%;
-    margin: 50px;
+    top: 200px;
+  }
+
+  .content-area p {
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    top: 30px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    padding-bottom: 50px;
+  }
+
+  .content-area img {
+    width: 80%;
+    position: relative;
+    top: 0;
+    left: 10%;
+    margin: 20px auto;
+  }
+
+  .content-area1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #b0b5ba;
+    top: 0;
+  }
+
+  .content-area1 ul li {
+    text-align: center;
+    width: 80%;
+    margin: 30px auto;
     position: relative;
     top: 5px;
-    font-size: 30px;
+    font-size: 24px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
     padding-bottom: 17px;
-    margin-left: 70px;
-}
-.content-area1 p {
-    margin-left :40px;
-    font-size: 26px;
+    margin-left: 0;
+  }
+
+  .content-area1 p {
+    margin-left: 0;
+    font-size: 20px;
     font-weight: 400;
     padding-bottom: 10px;
+  }
 
-    
-}
-.content-area1 img{
-    float: left;
-    width: 12%;
+  .content-area1 img {
+    float: none;
+    width: 30%;
     position: relative;
-    top: -16px;
-    left: 0%;
-    margin: 13px;
+    top: 0;
+    left: 35%;
+    margin: 20px auto;
+  }
+  .footerd-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footerd-distributed .footerd-left,
+  .footerd-distributed .footerd-center,
+  .footerd-distributed .footerd-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footerd-distributed .footerd-center i {
+    margin-left: 0;
+  }
 }
 
 
@@ -321,7 +641,18 @@ body {
 .banner-area {
   text-align: center;
 }
-
+.background-imagehikka {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/Users/vishwapabasara/Downloads/Picture perfect sea turtle on beach.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .banner-area h2 {
   color: pink;
@@ -379,15 +710,40 @@ iframe {
 }
 .banner-area3{
   padding-top:9rem ;
+  text-align: center;
 }
 .banner-area3 h2{
   font-size: 3rem;
-  color: #c73d21;
+  color: #070707;
   font-weight: 600;
   text-decoration: none;
 }
+.content_areahikka{
+  font-size: medium;
+  color: #000;
+  font-weight: bolder;
+}
+.content_areahikka2 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.content_areahikka p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333; 
+}
+
+.content_areahikka {
+  margin-bottom: 20px;
+}
+
 .grid-container {
-  background-color: #333;
+  background-color: #fffcfc;
   padding-top: 40px;
   display: flex;
   justify-content: space-between;
@@ -400,6 +756,7 @@ iframe {
 }
 .grid-item img{
   width: 400px;
+  color: #000;
   height: auto;
 }
 
@@ -435,6 +792,14 @@ img {
   width: 700px;
   margin-left: 100px;
 }
+.sectionh1 {
+  background-color: #fff;
+  font-size: calc();
+  padding: auto;
+  height:500px;
+  width: 700px;
+  margin-left: 100px;
+}
 .sectionh a:visited{
   color: rgb(0, 0, 0);
 
@@ -442,6 +807,17 @@ img {
 .sectionh a:active{
     color: blue;
   
+}
+.sectionh{
+  width: 40%;
+  position: relative;
+  right: 10px;
+}
+.sectionh1{
+  width: 40%;
+  position: relative;
+  left: 600px;
+  bottom: 520px;
 }
 .column1{
   padding-top: 50px;
@@ -461,16 +837,28 @@ img {
 
 
 /* purchase and donation */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/Users/vishwapabasara/Downloads/turtle10.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .banner-area4 {
-  background-color: #058a8f;
+  background-color: #e9efef;
 }
 #donation-section {
-  background-color: #73f7f7;
+  background-color: #f4f7f7;
   padding-left: 3rem;
 }
 
 #purchase-section {
-  background-color: #66f0f5;
+  background-color: #f3f4f5;
   padding-left: 3rem;
 }
 
@@ -482,6 +870,7 @@ img {
 form {
   margin-bottom: 20px;
 }
+
 
 label {
   display: block;
@@ -754,10 +1143,25 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color:rgb(4, 158, 158) ;
+  background-color:rgb(201, 206, 206) ;
   
 }
-
+.background-image1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/Users/vishwapabasara/Downloads/Skip a Straw – Save a Turtle.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.sectiont{
+  text-align: center;
+  size: 30px;
+}
 .banner-area5 {
   text-align:center;
 }
@@ -793,13 +1197,14 @@ body {
 .section {
   max-width: 800px;
   margin: 0 auto;
-  background-color:#e9f5f4;
+  background-color:#010101;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
-  border-color: #000;
-  border-width: 200px;
+  border-color: #bf0909;
+  border-width: 2000px;
+  color: white;
 }
 .section img {
   display: block;
@@ -870,280 +1275,7 @@ body {
     transition: transform 0.3s ease;
   }
 
-/*category*/
 
-
-body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-
-header {
-  background-color: #f8f8f8;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo img {
-  height: 50px;
-}
-
-nav a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: #333;
-}
-
-.banner-area7 {
-  background-color: #9be9ae;
-  padding: 20px;
-  text-align: center;
-}
-
-.banner-area7 h2 {
-  color: rgb(0, 4, 238);
-  font-size: 32px;
-  text-decoration: underline;
-}
-.banner-area7 p{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight:bold;
-  font-size:medium;
-}
-
-.sectionB {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color:#a0cebb;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  border-color: #000;
-  border-width: 200px;
-}
-.sectionB img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  padding-top: 10px;
-}
-ol {
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
-
-ul {
-  margin-left: 40px;
-}
-
-ol li,
-ul li {
-  margin-bottom: 10px;
-}
-
-h2 {
-  color: #333;
-  font-size: 24px;
-  margin-top: 20px;
-  text-decoration: underline;
-}
-
-h3 {
-  color: #333;
-  font-size: 20px;
-  margin-top: 20px;
-  text-decoration: underline;
-}
-
-iframe {
-  width: 100%;
-  max-width: 560px;
-  height: 315px;
-  margin: 20px auto;
-  display: block;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 50px;
-}
-
- td {
-  border: 3px solid #080000;
-  padding: 15px;
-  text-align: center;
-  font-size: 1rem;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #ebf5f7f3;
-}
-
-th {
-  border: 3px solid #080000;
-  padding: 15px;
-  text-align: center;
-  background-color: #06f8bc;
-  font-weight: bold;
-  font-size: 2rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-a {
-  color: #333;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #88e7f3;
-}
-
-.text-highlight {
-  text-decoration: underline;
-}
-
-.text-fade {
-  animation: fade 5s infinite;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@media screen and (max-width: 600px) {
-  .logo {
-    width: 100%;
-    float: none;
-    text-align: center;
-    line-height: 70px;
-  }
-
-  .logo img {
-    width: 50%;
-    margin: 20px;
-  }
-
-  nav {
-    position: relative;
-    line-height: 70px;
-  }
-
-  nav a {
-    text-decoration: none;
-    font-family: "Poppins";
-    letter-spacing: 4px;
-    font-size: 16px;
-    color: rgb(22, 22, 22);
-    padding: 20px 10px;
-    margin: 0 1px;
-    font-weight: 500;
-  }
-
-  .banner-area h2 {
-    padding-top: 8%;
-    font-size: 2rem;
-    color: #f8eeee;
-    position: relative;
-    top: 200px;
-    left: 10px;
-  }
-
-  .content-area {
-    width: 100%;
-    height: auto;
-    position: relative;
-    background: #b0b5ba;
-    top: 200px;
-  }
-
-  .content-area p {
-    text-align: center;
-    width: 80%;
-    margin: 20px auto;
-    position: relative;
-    top: 30px;
-    font-size: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 300;
-    padding-bottom: 50px;
-  }
-
-  .content-area img {
-    width: 80%;
-    position: relative;
-    top: 0;
-    left: 10%;
-    margin: 20px auto;
-  }
-
-  .content-area1 {
-    width: 100%;
-    height: auto;
-    position: relative;
-    background: #b0b5ba;
-    top: 0;
-  }
-
-  .content-area1 ul li {
-    text-align: center;
-    width: 80%;
-    margin: 30px auto;
-    position: relative;
-    top: 5px;
-    font-size: 24px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 700;
-    padding-bottom: 17px;
-    margin-left: 0;
-  }
-
-  .content-area1 p {
-    margin-left: 0;
-    font-size: 20px;
-    font-weight: 400;
-    padding-bottom: 10px;
-  }
-
-  .content-area1 img {
-    float: none;
-    width: 30%;
-    position: relative;
-    top: 0;
-    left: 35%;
-    margin: 20px auto;
-  }
-  .footerd-distributed {
-    font: bold 14px sans-serif;
-  }
-
-  .footerd-distributed .footerd-left,
-  .footerd-distributed .footerd-center,
-  .footerd-distributed .footerd-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footerd-distributed .footerd-center i {
-    margin-left: 0;
-  }
-}
 
 
 
